@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+        <script
+            src="https://kit.fontawesome.com/e7ebc2fc39.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./public/style/style.css" />
+        <title>TO DO</title>
+    </head>
+    <body>
+        <header>
+            <h1>TO DO's</h1>
+        </header>
+
+        <form>
+            <input type="text" class="todo-input" maxlength="40" />
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Done</option>
+                    <option value="uncompleted">To do</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+
+        <script src=""></script>
+        <script src="./public/script/app.js"></script>
+    </body>
+</html>
