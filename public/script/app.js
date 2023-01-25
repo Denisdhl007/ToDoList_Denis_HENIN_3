@@ -65,7 +65,7 @@ function addTodo(e) {
     todoInput.value = "";
 }
 
-// Cette fonction a pour but de gérer la suppression et la marque qui spécfiique que la tâche est achevée d'un élément de liste de tâches. Elle prend en paramètre un événement (e) qui cible l'élément sur lequel l'utilisateur a cliqué. Elle vérifie ensuite si cet élément est le bouton de suppression ou le bouton de validation. Si c'est le bouton de suppression qui cliqué, la focntion ajoute une animation "fall" à l'élément parent, à savoir la tâche, puis, une fois l'animation terminée, elle appelle une fonction pour supprimer la tâche de la mémoire locale, puis la tâche est supprimée de l'affichage. Si c'est le bouton de validation qui est cliqué, la fonctoin ajoute une class "completed" à l'élément parent (la tâche), ce qui permet de marquer la tâche comme achevée.
+// Cette fonction a pour but de gérer la suppression et la marque qui spécfiique que la tâche est achevée d'un élément de liste de tâches. Elle prend en paramètre un événement (e) qui cible l'élément sur lequel l'utilisateur a cliqué. Elle vérifie ensuite si cet élément est le bouton de suppression ou le bouton de validation. Si c'est le bouton de suppression qui est cliqué, la focntion ajoute une animation "fall" à l'élément parent, à savoir la tâche, puis, une fois l'animation terminée, elle appelle une fonction pour supprimer la tâche de la mémoire locale, puis la tâche est supprimée de l'affichage. Si c'est le bouton de validation qui est cliqué, la fonctoin ajoute une class "completed" à l'élément parent (la tâche), ce qui permet de marquer la tâche comme achevée.
 
 function deleteCheck(e) {
     const item = e.target;
